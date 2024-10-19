@@ -16,7 +16,7 @@ int main() {
         menor=numeros[i];
     }
  }
- cout<<"el mayor es : "<<mayor;
+ cout<<"el mayor es : "<<mayor<<endl;
  cout<<"el menor es : "<<menor;
     return 0;
 }
