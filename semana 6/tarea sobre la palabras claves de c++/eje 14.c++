@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int contador ;
+    int contador = 0;
     while (contador < 5) { 
         cout << "Contador: " << contador << endl;
         contador++;

@@ -1,27 +1,23 @@
-#include <iostream>
-#include <ctime>
+#include<iostream>
 using namespace std;
-#define N 4
-int main()
-{
-    int v[]={3,5,2,6};
-    int minor,major,j;
-    int sum=0;
-    for (int i = 0; i < 3; i++)
-    {
-        j=i+1;
-        if(v[i]>v[j]){
-            major=v[i];
-            minor=v[j];
-        }else{
-            major=v[j];
-            minor=v[i];
+
+int main() {
+    int year;
+
+    // Solicitar al usuario que ingrese un año
+    cout << "Ingresa un año: ";
+    cin >> year;
+
+    // Verificar si el año es bisiesto
+    if (year % 4 == 0) {
+        if (year % 100 != 0 || year % 400 == 0) {
+            cout << year << " es un año bisiesto." << endl;
+        } else {
+            cout << year << " no es un año bisiesto." << endl;
         }
-        cout<<minor<<" "<<major<<endl;
-        do{
-            sum+=minor;
-            minor++;
-        }while(minor<major);
+    } else {
+        cout << year << " no es un año bisiesto." << endl;
     }
-    cout<<"La suma es: "<<sum;
+
+    return 0;
 }
