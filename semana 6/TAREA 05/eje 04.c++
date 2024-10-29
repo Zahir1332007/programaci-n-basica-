@@ -4,7 +4,7 @@ int main(){
     const int n=3;
     const int m=2;
     int matrix[n][m] = {
-        {1, 2},
+        {9, 2},
         {8, 4},
         {5, 6}
     };

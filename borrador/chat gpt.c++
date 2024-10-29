@@ -1,23 +1,20 @@
 #include<iostream>
+#include<cmath>  // Para usar pow()
 using namespace std;
 
-int main() {
-    int year;
+// Función que eleva 'm' a la potencia 'n'
+int potencia(int m, int n){
+    return pow(m, n);  // Usamos pow() para elevar m a la potencia n
+}
 
-    // Solicitar al usuario que ingrese un año
-    cout << "Ingresa un año: ";
-    cin >> year;
-
-    // Verificar si el año es bisiesto
-    if (year % 4 == 0) {
-        if (year % 100 != 0 || year % 400 == 0) {
-            cout << year << " es un año bisiesto." << endl;
-        } else {
-            cout << year << " no es un año bisiesto." << endl;
-        }
-    } else {
-        cout << year << " no es un año bisiesto." << endl;
-    }
-
+int main(){
+    int m, n, resp;
+    cout << "Ingresa la base (m) y el exponente (n):" << endl;
+    cin >> m;
+    cin >> n;
+    
+    resp = potencia(m, n);  // Calculamos m^n
+    cout << m << " elevado a la " << n << " = " << resp << endl;
+    
     return 0;
 }

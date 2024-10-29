@@ -8,7 +8,7 @@ int main (){
         x=-x;
     }
     while(x>0){
-        suma +=x%10;
+        suma += x%10;
         x/=10;
     }
     cout<<"la suma de los numeros digitos es "<<suma<<endl;
